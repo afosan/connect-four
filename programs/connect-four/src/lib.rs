@@ -86,7 +86,7 @@ pub mod connect_four {
         }
 
         if has_won(game.board[next_player_index]) {
-            game.status = GameStatus::Finished(if next_player_index == 0 { GameResult::Player1Won } else { GameResult::Player1Won });
+            game.status = GameStatus::Finished(if next_player_index == 0 { GameResult::Player1Won } else { GameResult::Player2Won });
         }
 
         game.move_count += 1;
